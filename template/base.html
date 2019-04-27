@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>My Awesome APP</title>
+    </head>
+    <body>
+        <h3>
+            {% if code %}
+                {{code}}<br>
+            {% endif %}
+        </h3>
+            
+        {% if codeArray %}
+            <ul>
+                {% for ca in codeArray %}
+                    <li>
+                        {{ ca.0 }}
+                        {% if ca.1 %}
+                            <ul>
+                                {{ ca.1 }}
+                            </ul>
+                        {% endif %}
+                    </li><br>
+                {% endfor %}
+            </ul>
+        {% endif %}
+    </body>
+</html>
