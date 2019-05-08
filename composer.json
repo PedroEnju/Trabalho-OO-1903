@@ -8,7 +8,11 @@
     },
     "autoload"  : {
         "psr-4"     : {
-            "MyCode\\"      : "src/MyCode/"
+            "MyCode\\"                  : "src/MyCode/",
+            "MyCode\\Controller\\"      : "src/MyCode/Controller",
+            "MyCode\\Factory\\"         : "src/MyCode/Factory",
+            "MyCode\\Model\\"           : "src/MyCode/Model",
+            "MyCode\\Face\\"            : "src/MyCode/Face"
         }
     },
     "scripts"   : {
